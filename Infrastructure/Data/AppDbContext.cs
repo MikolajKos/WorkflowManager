@@ -16,7 +16,7 @@ namespace Infrastructure.Data
         }
 
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<Posiotion> Posiotions { get; set; }
+        public DbSet<Position> Positions { get; set; }
         public DbSet<Specialisation> Specialisations { get; set; }
         public DbSet<ToDoTask> ToDoTasks { get; set; }
     }

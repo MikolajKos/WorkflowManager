@@ -8,7 +8,7 @@ namespace Domain.Entities
 {
     public class Specialisation
     {
-        public required int Id { get; set; }
+        public int Id { get; set; }
         public string? Name { get; set; }
         public List<Employee>? Employees { get; set; }
     }
