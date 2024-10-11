@@ -1,4 +1,6 @@
+using Application.Contracts;
 using Infrastructure.Data;
+using Infrastructure.Implementations;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +14,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IEmployee, EmployeeRepo>();
 
 var app = builder.Build();
 

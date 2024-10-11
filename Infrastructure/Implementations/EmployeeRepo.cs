@@ -1,6 +1,9 @@
 ﻿using Application.Contracts;
 using Application.DTOs;
 using Domain.Entities;
+using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,29 +14,42 @@ namespace Infrastructure.Implementations
 {
     public class EmployeeRepo : IEmployee
     {
-        public Task<ServiceResponse> AddAsync(Employee employee)
+        private readonly AppDbContext appDbContext;
+
+        public EmployeeRepo(AppDbContext appDbContext)
         {
-            throw new NotImplementedException();
+            this.appDbContext = appDbContext;
         }
 
-        public Task<ServiceResponse> DeleteAsync(int id)
+        public async Task<ServiceResponse> AddAsync(Employee employee)
         {
-            throw new NotImplementedException();
+            appDbContext.Employees.Add(employee);
+            await SaveChangesAsync();
+            return new ServiceResponse(true, "Employee added.");
         }
 
-        public Task<List<Employee>> GetAsync()
+        public async Task<ServiceResponse> DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var employee = await appDbContext.Employees.FindAsync(id);
+            if (employee == null)
+                return new ServiceResponse(false, "Employee not found.");
+
+            appDbContext.Employees.Remove(employee);
+            await SaveChangesAsync();
+            return new ServiceResponse(true, "Employee deleted");
         }
 
-        public Task<Employee> GetByIdAsync(int id)
+        public async Task<List<Employee>> GetAsync() => await appDbContext.Employees.AsNoTracking().ToListAsync();
+
+        public async Task<Employee> GetByIdAsync(int id) => await appDbContext.Employees.FindAsync(id);
+
+        public async Task<ServiceResponse> UpdateAsync(Employee employee)
         {
-            throw new NotImplementedException();
+            appDbContext.Employees.Update(employee);
+            await SaveChangesAsync();
+            return new ServiceResponse(true, "User Updated");
         }
 
-        public Task<ServiceResponse> UpdateAsync(Employee employee)
-        {
-            throw new NotImplementedException();
-        }
+        private async Task SaveChangesAsync() => await appDbContext.SaveChangesAsync();
     }
 }
