@@ -1,5 +1,6 @@
 ﻿using Application.Contracts;
 using Application.DTOs;
+using AutoMapper;
 using Domain.Entities;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -15,10 +16,12 @@ namespace Infrastructure.Implementations
     public class EmployeeRepo : IEmployee
     {
         private readonly AppDbContext appDbContext;
+        private readonly IMapper mapper;
 
-        public EmployeeRepo(AppDbContext appDbContext)
+        public EmployeeRepo(AppDbContext appDbContext, IMapper mapper)
         {
             this.appDbContext = appDbContext;
+            this.mapper = mapper;
         }
 
         public async Task<ServiceResponse> AddAsync(Employee employee)
