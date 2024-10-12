@@ -1,4 +1,5 @@
 using Application.Contracts;
+using Application.Services;
 using Infrastructure.Data;
 using Infrastructure.Implementations;
 using Microsoft.EntityFrameworkCore;
@@ -15,7 +16,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddAutoMapper(typeof(Program).Assembly);
+builder.Services.AddAutoMapper(typeof(EmployeeProfile).Assembly);
 
 builder.Services.AddScoped<IEmployee, EmployeeRepo>();
 

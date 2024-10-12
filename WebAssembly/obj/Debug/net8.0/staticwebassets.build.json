@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0NQNAnFV2sEZs9UnlDWdCbjIxeA7l//ztcqqOb+hf7w=",
+  "Hash": "2+wa64MJmnOgxsivkXRLVMCmc0wSK4t/IC+OvIelhKY=",
   "Source": "WebAssembly",
   "BasePath": "/",
   "Mode": "Root",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\nikok\\OneDrive\\Dokumenty\\PROGRAMOWANIE\\Main projects\\WorkflowManagerApp\\WebAssembly\\obj\\Debug\\net8.0\\webcil\\Application.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\nikok\\OneDrive\\Dokumenty\\PROGRAMOWANIE\\Main projects\\WorkflowManagerApp\\WebAssembly\\bin\\Debug\\net8.0\\wwwroot\\_framework\\AutoMapper.wasm",
+      "SourceId": "WebAssembly",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\nikok\\OneDrive\\Dokumenty\\PROGRAMOWANIE\\Main projects\\WorkflowManagerApp\\WebAssembly\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/AutoMapper.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\nikok\\OneDrive\\Dokumenty\\PROGRAMOWANIE\\Main projects\\WorkflowManagerApp\\WebAssembly\\obj\\Debug\\net8.0\\webcil\\AutoMapper.wasm"
     },
     {
       "Identity": "C:\\Users\\nikok\\OneDrive\\Dokumenty\\PROGRAMOWANIE\\Main projects\\WorkflowManagerApp\\WebAssembly\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Azure.Core.wasm",
@@ -4822,6 +4841,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\nikok\\OneDrive\\Dokumenty\\PROGRAMOWANIE\\Main projects\\WorkflowManagerApp\\WebAssembly\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Threading.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\nikok\\OneDrive\\Dokumenty\\PROGRAMOWANIE\\Main projects\\WorkflowManagerApp\\WebAssembly\\obj\\Debug\\net8.0\\compressed\\2bhhw9gnyg.gz",
+      "SourceId": "WebAssembly",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\nikok\\OneDrive\\Dokumenty\\PROGRAMOWANIE\\Main projects\\WorkflowManagerApp\\WebAssembly\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/AutoMapper.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\nikok\\OneDrive\\Dokumenty\\PROGRAMOWANIE\\Main projects\\WorkflowManagerApp\\WebAssembly\\bin\\Debug\\net8.0\\wwwroot\\_framework\\AutoMapper.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\nikok\\OneDrive\\Dokumenty\\PROGRAMOWANIE\\Main projects\\WorkflowManagerApp\\WebAssembly\\bin\\Debug\\net8.0\\wwwroot\\_framework\\AutoMapper.wasm"
     },
     {
       "Identity": "C:\\Users\\nikok\\OneDrive\\Dokumenty\\PROGRAMOWANIE\\Main projects\\WorkflowManagerApp\\WebAssembly\\obj\\Debug\\net8.0\\compressed\\30eymebms8.gz",

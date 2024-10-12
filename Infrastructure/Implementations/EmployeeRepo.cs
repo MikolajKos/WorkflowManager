@@ -24,8 +24,9 @@ namespace Infrastructure.Implementations
             this.mapper = mapper;
         }
 
-        public async Task<ServiceResponse> AddAsync(Employee employee)
+        public async Task<ServiceResponse> AddAsync(CreateEmployeeDTO dto)
         {
+            var employee = mapper.Map<Employee>(dto); 
             appDbContext.Employees.Add(employee);
             await SaveChangesAsync();
             return new ServiceResponse(true, "Employee added.");

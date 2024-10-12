@@ -1,4 +1,5 @@
 ﻿using Application.Contracts;
+using Application.DTOs;
 using Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -33,7 +34,7 @@ namespace WebAPI.Controllers
 
         // POST api/<EmployeeController>
         [HttpPost]
-        public async Task<IActionResult> Add([FromBody] Employee employeeDto)
+        public async Task<IActionResult> Add([FromBody] CreateEmployeeDTO employeeDto)
         {
             var result = await employee.AddAsync(employeeDto);
             return Ok(result);

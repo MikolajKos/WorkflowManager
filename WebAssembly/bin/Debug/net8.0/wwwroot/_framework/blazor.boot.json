@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "WebAssembly",
   "resources": {
-    "hash": "sha256-+CUeypHMjtnmRB+tVJVGjjjKej1lbKCIICkBEkpGZH0=",
+    "hash": "sha256-j0UuMyLOShTyx2G4obrLMgv1frTLQ/X+MUzzUcpy5+c=",
     "jsModuleNative": {
       "dotnet.native.8.0.7.92hchvnzfp.js": "sha256-tFsxPBbhkdn6GKNBKvCRLzrfAHdyM86odYTe0MtrwMk="
     },
@@ -17,6 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
+      "AutoMapper.wasm": "sha256-XaJNBgabMaUm+eHA4x0ZNxokLAQcZzbR3/rWzgA2mQg=",
       "Azure.Core.wasm": "sha256-cQyh2VXLObWcWT4DMebhILyvQTQYLQG0wN7/OwDJX5g=",
       "Azure.Identity.wasm": "sha256-Z4d2gC7rBBgpCvtxUFKuedytnRnWY92gC2dLlsuh+xQ=",
       "Microsoft.AspNetCore.Authorization.wasm": "sha256-tZ3Z0q6xQTgUxlWgiWvzS4SBQeBqETtRGtUWvVaU31w=",
@@ -236,16 +237,16 @@
       "mscorlib.wasm": "sha256-fLbZiSHBNdpHoh4EgRqMaNP5NQyIK5TEj6AXFLqo8m8=",
       "netstandard.wasm": "sha256-d4xbAE8qrKq5euUoZHPO+jkYPjlCYBzUew45MKsYKic=",
       "System.Private.CoreLib.wasm": "sha256-8yi6NcX1lkNQgV4WKjnMBYIZyKh4P+OXnXVQmgxGZD4=",
-      "Application.wasm": "sha256-Kt1Y/+fZSnm5NpeiVzidjjsa78KAo6YfQ2wR0mXFF8Y=",
-      "Domain.wasm": "sha256-kjrPKH2qaygUuk0tdzNTj8QFALZYLY6xTfKxKA7luMQ=",
-      "Infrastructure.wasm": "sha256-PaqyeiTvlPNqyUgDWN+6x1gtK/dJtPfENxm1+xDWy8A=",
-      "WebAssembly.wasm": "sha256-828dbtutK7xppOmxOrOh3DGIhXyUq+J3q/BtTb0AY4g="
+      "Application.wasm": "sha256-VsPAXrZWwLmYn/v42IHBiI8suHoU/pqKiqLjcfmHNiU=",
+      "Domain.wasm": "sha256-9HfHM7AMEHI69UJcYuCD9PY383nkl3fA+TrkiL9BLO4=",
+      "Infrastructure.wasm": "sha256-X/FlcY6593lq5r2L9C3u1pM6WNTgaT5X3Db3EcDJzdo=",
+      "WebAssembly.wasm": "sha256-Q0OqovdNTKdxRbrG7O0CHEQMCZHOSSipVDBrqy4TMwc="
     },
     "pdb": {
-      "Application.pdb": "sha256-1HRYs65D+agjSOVhNWjktH/4j3sMIjX/p6bKW5DSJsM=",
-      "Infrastructure.pdb": "sha256-ez4DpPZNiT4OOtJScnM/RQOENp3kleDluiQ1txpEnyw=",
-      "Domain.pdb": "sha256-ec3I4HUg4A//OYrIV8NopRX2bgtnSo6lzG214u1ftTs=",
-      "WebAssembly.pdb": "sha256-vKnUXCFh6fZnK1sgS6bF9YbMQvx+AwX6Wj0R6pqEnrI="
+      "Application.pdb": "sha256-TXXNDTgCKk0cX5ZPekOV+xRK3yXU6sd9JgqopZ5MNhg=",
+      "Infrastructure.pdb": "sha256-MzCM5dOVxXwG2tb2FPjguFgkgdrHHiWgf/Ab28mKJok=",
+      "Domain.pdb": "sha256-HNZSUa4OgEVq9MCW/5H4N8qGfR57jlYPzP+IeWlHBEc=",
+      "WebAssembly.pdb": "sha256-2NJs19dwsRQ2+1xloC1S5QMGfYLdNNzAQ7bdanfOZDU="
     }
   },
   "cacheBootResources": true,

@@ -10,7 +10,7 @@ namespace Application.Contracts
 {
     public interface IEmployee
     {
-        Task<ServiceResponse> AddAsync(Employee employee);
+        Task<ServiceResponse> AddAsync(CreateEmployeeDTO dto);
         Task<ServiceResponse> UpdateAsync(Employee employee);
         Task<ServiceResponse> DeleteAsync(int id);
         Task<List<Employee>> GetAsync();
