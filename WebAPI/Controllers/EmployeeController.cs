@@ -40,6 +40,13 @@ namespace WebAPI.Controllers
             return Ok(result);
         }
 
+        [HttpPost("assign-task")]
+        public async Task<IActionResult> AssignTask([FromBody] AssignTaskDTO dto)
+        {
+            var result = await employee.AssignTaskAsync(dto);
+            return Ok(result);
+        }
+
         // PUT api/<EmployeeController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)

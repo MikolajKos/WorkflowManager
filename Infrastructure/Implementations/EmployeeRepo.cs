@@ -32,6 +32,14 @@ namespace Infrastructure.Implementations
             return new ServiceResponse(true, "Employee added.");
         }
 
+        public async Task<ServiceResponse> AssignTaskAsync(AssignTaskDTO dto)
+        {
+            var toDoTask = mapper.Map<Employee>(dto);
+            appDbContext.Employees.Add(toDoTask);
+            await SaveChangesAsync();
+            return new ServiceResponse(true, "Task assigned.");
+        }
+
         public async Task<ServiceResponse> DeleteAsync(int id)
         {
             var employee = await appDbContext.Employees.FindAsync(id);

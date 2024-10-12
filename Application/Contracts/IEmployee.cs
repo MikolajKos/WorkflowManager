@@ -15,5 +15,6 @@ namespace Application.Contracts
         Task<ServiceResponse> DeleteAsync(int id);
         Task<List<Employee>> GetAsync();
         Task<Employee> GetByIdAsync(int id);
+        Task<ServiceResponse> AssignTaskAsync(AssignTaskDTO dto);
     }
 }
