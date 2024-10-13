@@ -9,6 +9,7 @@ namespace Application.DTOs
 {
     public class AssignTaskDTO
     {
-        public List<ToDoTask>? ToDoTasks { get; set; }
+        public int Id { get; set; }
+        public List<int>? ToDoTasks { get; set; }
     }
 }
